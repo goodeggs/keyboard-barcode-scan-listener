@@ -20,7 +20,7 @@ const stringToBoolean = (val) => {
 };
 
 /**
- * Jest configuration for running for unit tests.
+ * Jest configuration for unit tests.
  *
  * Coverage reporting is automatically enabled in CI environments; enable it locally by setting
  * `COVERAGE=true`.
