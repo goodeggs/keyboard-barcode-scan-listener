@@ -1,5 +1,7 @@
 # keyboard-barcode-scan-listener
 
+[![Build Status](https://travis-ci.com/goodeggs/keyboard-barcode-scan-listener.svg?branch=master)](https://travis-ci.com/goodeggs/keyboard-barcode-scan-listener)
+
 Listen for barcode scan events from keyboard/HID devices in the browser.
 
 ## Installation
