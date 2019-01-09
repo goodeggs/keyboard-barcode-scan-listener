@@ -1,0 +1,41 @@
+dist: xenial
+
+language: node_js
+node_js:
+  - 8.11.4
+
+cache:
+  yarn: true
+
+env:
+  global:
+    - PATH="$HOME/.yarn/bin:$PATH"
+    - YARN_VERSION="1.9.4"
+
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version "${YARN_VERSION}"
+
+install: yarn install
+
+jobs:
+  include:
+    # Install dependencies and save them to the Travis cache
+    - stage: "Prepare cache"
+      # Don't run `script`, just install dependencies
+      before_script: true
+      script: true
+    # Run tests
+    - stage: "Test"
+      name: "Lint"
+      script: yarn run lint
+    - name: "Type Checking"
+      script: yarn run typecheck
+    - name: "Unit Tests"
+      script: yarn run test:unit
+      env:
+        # By default, Jest tries to run too many workers for Travis to handle and tests lock up. Limit the
+        # number of workers Jest runs to the number of available CPUs.
+        #
+        # https://github.com/facebook/jest/issues/5989
+        # https://github.com/facebook/jest/issues/3765
+        - JEST_FLAGS="--maxWorkers=$(nproc)"

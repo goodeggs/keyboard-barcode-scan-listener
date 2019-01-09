@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "lib",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "removeComments": false,
+    "strict": true,
+    "target": "es6",
+    "allowSyntheticDefaultImports": true
+  }
+}
