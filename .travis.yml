@@ -43,7 +43,7 @@ jobs:
       if: tag =~ ^v
       script: echo "Publishing to npm registry..."
       deploy:
-        provider: yarn
+        provider: npm
         api_key: $NPM_AUTH
         skip_cleanup: true
         on:
