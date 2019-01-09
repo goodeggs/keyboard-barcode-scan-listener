@@ -60,7 +60,8 @@
   "eslintConfig": {
     "root": true,
     "plugins": [
-      "goodeggs"
+      "goodeggs",
+      "jest"
     ],
     "extends": [
       "plugin:goodeggs/goodeggs",
