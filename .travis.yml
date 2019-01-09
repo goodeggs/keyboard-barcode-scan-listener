@@ -40,9 +40,11 @@ jobs:
         # https://github.com/facebook/jest/issues/3765
         - JEST_FLAGS="--maxWorkers=$(nproc)"
     - stage: "Publish to registry"
-      if: tag IS present
+      if: tag =~ ^v
       script: echo "Publishing to npm registry..."
       deploy:
         provider: yarn
         api_key: $NPM_AUTH
-        all_branches: true
+        skip_cleanup: true
+        on:
+          all_branches: true
