@@ -39,3 +39,10 @@ jobs:
         # https://github.com/facebook/jest/issues/5989
         # https://github.com/facebook/jest/issues/3765
         - JEST_FLAGS="--maxWorkers=$(nproc)"
+
+deploy:
+  provider: script
+  script: 'yarn publish'
+  skip_cleanup: true
+  on:
+    tags: true
