@@ -28,11 +28,19 @@ const stringToBoolean = (val) => {
 module.exports = {
   collectCoverage: stringToBoolean(process.env.CI) || stringToBoolean(process.env.COVERAGE),
   collectCoverageFrom: ['**/*.{ts,tsx,js,jsx}'],
-  coverageDirectory: './.coverage/',
-  coveragePathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/jest.config.js'],
+  coveragePathIgnorePatterns: [
+    // Ignore configuration files (e.g. jest.config.js, webpack.config.js, )
+    '<rootDir>/.+\\.config(\\.babel)?\\.js',
+    // Ignore rc files (e.g. .prettierrc.js, .eslintrc.js, etc.)
+    '<rootDir>/\\..+rc\\.js',
+    // Ignore coverage report support files
+    '<rootDir>/coverage/',
+    // Ignore compiled source
+    '<rootDir>/lib/',
+  ],
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json'],
   testMatch: ['**/?(*.)test.!(*.){js,jsx,ts,tsx}'],
-  testPathIgnorePatterns: ['<rootDir>/.coverage/', '<rootDir>/lib/', '<rootDir>/node_modules/'],
+  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],
   testURL: 'http://localhost',
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
