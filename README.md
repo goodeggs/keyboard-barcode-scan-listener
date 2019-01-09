@@ -6,9 +6,15 @@ Listen for barcode scan events from keyboard/HID devices in the browser.
 
 ## Installation
 
+To install via npm:
+
 ```sh
 npm install keyboard-barcode-scan-listener
+```
 
+To install via yarn:
+
+```sh
 yarn add keyboard-barcode-scan-listener
 ```
 
