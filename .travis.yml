@@ -15,7 +15,7 @@ env:
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version "${YARN_VERSION}"
 
-install: yarn install
+install: yarn install --frozen-lockfile
 
 jobs:
   include:
@@ -39,6 +39,8 @@ jobs:
         # https://github.com/facebook/jest/issues/5989
         # https://github.com/facebook/jest/issues/3765
         - JEST_FLAGS="--maxWorkers=$(nproc)"
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
     - stage: "Publish to registry"
       if: tag =~ ^v
       script: echo "Publishing to npm registry..."
