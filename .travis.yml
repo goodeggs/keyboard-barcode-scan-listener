@@ -45,3 +45,4 @@ jobs:
       deploy:
         provider: yarn
         api_key: $NPM_AUTH
+        all_branches: true
