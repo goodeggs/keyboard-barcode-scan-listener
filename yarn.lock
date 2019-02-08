@@ -3049,7 +3049,7 @@ json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
-json2xml@^0.1.2:
+json2xml@^0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/json2xml/-/json2xml-0.1.3.tgz#9ae7c220bedd7c66a668e26f7ac182f6704eca21"
 
@@ -3103,8 +3103,8 @@ lcid@^1.0.0:
     invert-kv "^1.0.0"
 
 leasot@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/leasot/-/leasot-7.2.0.tgz#88bb54da2db2af58950a2082c5c610449963ce98"
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/leasot/-/leasot-7.3.0.tgz#133a6879088d6f827474cec929003d95702f3ba7"
   dependencies:
     async "^2.6.1"
     chalk "^2.4.2"
@@ -3112,7 +3112,7 @@ leasot@^7.2.0:
     eol "^0.9.1"
     get-stdin "^6.0.0"
     globby "^9.0.0"
-    json2xml "^0.1.2"
+    json2xml "^0.1.3"
     lodash "^4.17.11"
     log-symbols "^2.2.0"
     strip-ansi "^5.0.0"
