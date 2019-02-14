@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "Listen for keyboard sequences and interpret them as a barcode.",
   "main": "lib/index.js",
+  "files": [
+    "lib/**"
+  ],
   "repository": "git@github.com:goodeggs/keyboard-barcode-scan-listener.git",
   "author": "Good Eggs <open-source@goodeggs.com>",
   "license": "MIT",
