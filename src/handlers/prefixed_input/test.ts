@@ -14,12 +14,6 @@ const scanBarcode = (handler: (event: KeyboardEvent) => void, barcode: string | 
 };
 
 describe('prefixed input handler', () => {
-  it('throws an error when called with an empty prefix array', () => {
-    expect(() => createPrefixedInputHandler({prefix: []})).toThrowError(
-      'prefix array cannot be empty',
-    );
-  });
-
   describe('onScan', () => {
     it('calls onScan with the result', () => {
       const onScan = jest.fn();
