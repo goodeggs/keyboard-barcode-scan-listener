@@ -54,10 +54,6 @@ const createPrefixedInputHandler = ({
   scanIsComplete,
   scanTimeout = 200,
 }: CreatePrefixedInputHandlerConfig = {}): InputHandler => {
-  if (prefix != null && prefix.length === 0) {
-    throw new Error('prefix array cannot be empty');
-  }
-
   let buffer: string[] = [];
   let isCapturing = false;
   let prefixBuffer: string[] = [];
