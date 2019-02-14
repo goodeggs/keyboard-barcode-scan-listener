@@ -1551,8 +1551,8 @@ eslint-plugin-flowtype@^3.0.0:
     lodash "^4.17.10"
 
 eslint-plugin-goodeggs@^7.2.0:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-goodeggs/-/eslint-plugin-goodeggs-7.3.1.tgz#c09bb72b46a5788b2a2bc442dd1c36821c0e18c2"
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-goodeggs/-/eslint-plugin-goodeggs-7.4.0.tgz#2978d7bf596e6ba531ce40dfe08fedd58041b269"
   dependencies:
     eslint-plugin-flowtype "^3.0.0"
     eslint-plugin-import "^v2.14.0"
