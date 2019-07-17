@@ -1598,8 +1598,8 @@ eslint-plugin-import@^v2.14.0:
     resolve "^1.6.0"
 
 eslint-plugin-jest@^22.1.2:
-  version "22.9.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.9.0.tgz#2573dbcb4f1066b96a6e6d3b9aa439c80b28975a"
+  version "22.10.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.10.0.tgz#a22be77f4dc692808b88ead0059620bda299a97d"
 
 eslint-plugin-lodash@^3.1.0:
   version "3.1.0"
