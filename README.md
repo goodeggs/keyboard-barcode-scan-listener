@@ -45,3 +45,8 @@ The library ships with two handlers:
 - [**prefixed input**](src/handlers/prefixed_input/index.ts): Listens for a multi-character prefix (or, optionally, no prefix--not recommended!) and when the input passes a test or no input is detected for a certain amount of time, calls `onScan` with the barcode. Does not (and cannot) prevent barcode values from becoming input to the page.
 
 Both are configurable and well-documented in the source. In general, you should prefer the delimited input handler (the default) if possible as it is more flexible and is capable of preventing scanner keyboard events from being interpreted as regular user keyboard to the page, which is generally undesirable.
+
+## Contributing
+
+This app uses the [Good Eggs toolkit](https://github.com/goodeggs/goodeggs-toolkit) to power many of
+its development commands. See documentation there for details.
