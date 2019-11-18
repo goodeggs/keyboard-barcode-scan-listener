@@ -3232,8 +3232,8 @@ lcid@^1.0.0:
     invert-kv "^1.0.0"
 
 leasot@^9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/leasot/-/leasot-9.1.0.tgz#7b82be62900792dbcecbc4540d3ba7c016a9e9e6"
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/leasot/-/leasot-9.2.0.tgz#9565eb966ca91db92790b936f683b3970588715a"
   dependencies:
     async "^3.1.0"
     chalk "^3.0.0"
